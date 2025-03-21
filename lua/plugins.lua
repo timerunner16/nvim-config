@@ -20,6 +20,7 @@ vim.api.nvim_create_autocmd({'BufWritePost'}, {
 })
 
 return require('packer').startup(function(use)
+	-- Editor plugins
 	use {'nvim-tree/nvim-web-devicons'}
 
 	use {'ellisonleao/gruvbox.nvim'}
@@ -28,14 +29,25 @@ return require('packer').startup(function(use)
 	use {'nvim-telescope/telescope.nvim', tag = '0.1.8'}
 	use {'nvim-telescope/telescope-file-browser.nvim'}
 
-	use {'neoclide/coc.nvim', branch = 'release'}
-
 	use {'akinsho/bufferline.nvim', tag= '*' }
-	
 	use {'nvim-lualine/lualine.nvim'}
 
+	use {'karb94/neoscroll.nvim'}
+
+	use {'stevearc/overseer.nvim'}
+
+	-- LSP/Debug
+	use {'neoclide/coc.nvim', branch = 'release'}
+
+	-- Build plugins
+	use {'Zeioth/compiler.nvim'}
+
+	-- Games
 	use {'alec-gibson/nvim-tetris'}
 	use {'seandewar/nvimesweeper'}
+	
+	-- GLSL plugins
+	use {'tikhomirov/vim-glsl'}
 
 	if packer_bootstrap then
 		require('packer').sync()
