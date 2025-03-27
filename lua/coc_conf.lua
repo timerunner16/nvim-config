@@ -1,3 +1,10 @@
+vim.g.coc_global_extensions = {
+	"coc-clangd",
+	"coc-cmake",
+	"coc-json",
+	"coc-sumneko-lua",
+}
+
 vim.opt.updatetime = 300
 
 vim.api.nvim_create_augroup("CocGroup", {})

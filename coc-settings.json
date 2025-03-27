@@ -1,3 +1,7 @@
 {
-	"diagnostic.refreshOnInsertMode": true
+	"diagnostic.refreshOnInsertMode": true,
+	"suggest.noselect": true,
+	"suggest.timeout": 1000,
+
+	"sumneko-lua.enableNvimLuaDev": true
 }
