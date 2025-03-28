@@ -1,6 +1,11 @@
 local builtin = require('telescope.builtin')
 local file_browser = require('telescope').extensions.file_browser
 require("telescope").setup {
+	defaults = {
+		file_ignore_patterns = {
+			"third_party", "vendored"
+		}
+	},
 	extensions = {
 		file_browser = {
 			hijack_netrw = true
