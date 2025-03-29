@@ -7,3 +7,5 @@ vim.opt.tabstop = 4
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+vim.keymap.set('t', '<ESC>', '<C-\\><C-n>', {noremap = true})
