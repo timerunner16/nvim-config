@@ -21,6 +21,3 @@ require('lualine').setup({
 	inactive_winbar={},
 	extensions={}
 })
-
-vim.keymap.set('n', '<leader>nt', '<cmd>tabnew<cr>', { desc = 'Open new tab' })
-vim.keymap.set('n', '<leader>ct', '<cmd>tabclose<cr>', { desc = 'Close current tab' })

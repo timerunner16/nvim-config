@@ -9,3 +9,4 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.keymap.set('t', '<ESC>', '<C-\\><C-n>', {noremap = true})
+vim.keymap.set('n', '<leader>t', '<cmd>terminal<cr>', { desc = 'Open terminal in current tab' })
