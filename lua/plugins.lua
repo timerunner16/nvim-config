@@ -45,7 +45,7 @@ return require('packer').startup(function(use)
 	-- Games
 	use {'alec-gibson/nvim-tetris'}
 	use {'seandewar/nvimesweeper'}
-	
+
 	-- GLSL plugins
 	use {'tikhomirov/vim-glsl'}
 

@@ -26,3 +26,5 @@ bl.setup({
 
 vim.keymap.set('n', '<leader>nt', '<cmd>tabnew<cr>', { desc = 'Open new tab' })
 vim.keymap.set('n', '<leader>ct', '<cmd>tabclose<cr>', { desc = 'Close current tab' })
+vim.keymap.set('n', '<leader><Right>', '<cmd>tabnext<cr>', { desc = 'Goto next right tab' })
+vim.keymap.set('n', '<leader><Left>', '<cmd>tabprevious<cr>', { desc = 'Goto next left tab' })
