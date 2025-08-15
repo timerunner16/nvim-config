@@ -36,6 +36,9 @@ return require('packer').startup(function(use)
 
 	use {'stevearc/overseer.nvim'}
 
+	use {'MunifTanjim/nui.nvim'}
+	use {'nvim-neo-tree/neo-tree.nvim', branch = 'v3.x'}
+
 	-- LSP/Debug
 	use {'neoclide/coc.nvim', branch = 'release'}
 
