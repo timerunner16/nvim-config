@@ -4,6 +4,8 @@ vim.opt.wrap = false
 vim.opt.hls = false
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
