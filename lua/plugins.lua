@@ -39,6 +39,18 @@ return require('packer').startup(function(use)
 	use {'MunifTanjim/nui.nvim'}
 	use {'nvim-neo-tree/neo-tree.nvim', branch = 'v3.x'}
 
+	-- Git Integration
+	use({
+		'kdheepak/lazygit.nvim',
+		requires = {
+			"nvim-telescope/telescope.nvim",
+        	"nvim-lua/plenary.nvim",
+		},
+		config = function()
+			require("telescope").load_extension("lazygit")
+		end
+	})
+
 	-- LSP/Debug
 	use {'neoclide/coc.nvim', branch = 'release'}
 
@@ -49,8 +61,8 @@ return require('packer').startup(function(use)
 	use {'alec-gibson/nvim-tetris'}
 	use {'seandewar/nvimesweeper'}
 
-	-- GLSL plugins
-	use {'tikhomirov/vim-glsl'}
+	-- Shader plugins
+	use {'kalvinpearce/ShaderHighlight'}
 
 	if packer_bootstrap then
 		require('packer').sync()

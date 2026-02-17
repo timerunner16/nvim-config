@@ -3,5 +3,8 @@
 	"suggest.noselect": true,
 	"suggest.timeout": 1000,
 
-	"sumneko-lua.enableNvimLuaDev": true
+  "sumneko-lua.enableNvimLuaDev": true,
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/21.1.0/clangd_21.1.0/bin/clangd",
+  "inlayHint.enable": false,
+  "inlayHint.display": false
 }
