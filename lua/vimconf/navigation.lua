@@ -1,12 +1,3 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.wrap = false
-vim.opt.hls = false
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -16,3 +7,7 @@ vim.keymap.set('n', '<C-H>', '<cmd>wincmd h<CR>', { noremap = true, silent = tru
 vim.keymap.set('n', '<C-J>', '<cmd>wincmd j<CR>', { noremap = true, silent = true, desc = 'Swap to pane below' })
 vim.keymap.set('n', '<C-U>', '<cmd>wincmd k<CR>', { noremap = true, silent = true, desc = 'Swap to pane above' })
 vim.keymap.set('n', '<C-K>', '<cmd>wincmd l<CR>', { noremap = true, silent = true, desc = 'Swap to pane right' })
+
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldlevelstart = 99

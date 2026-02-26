@@ -1,3 +1,7 @@
+--[[
+	OUT OF USE, WILL PROBABLY REMOVE FROM CONFIG LATER
+--]]
+
 local bl = require("bufferline")
 bl.setup({
 	highlights = {
@@ -21,6 +25,14 @@ bl.setup({
 		},
 		separator_style = "thick",
 		enforce_regular_tabs = true,
+		offsets = {
+			{
+				filetype = "neo-tree",
+				text = "File Explorer",
+				highlight = "indicator_selected",
+				separator = false
+			}
+		}
 	}
 })
 
